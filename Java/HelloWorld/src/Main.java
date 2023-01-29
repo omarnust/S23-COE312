@@ -170,16 +170,7 @@ public class Main {
 		
 		System.out.println(plusMethod(6,7));
 		System.out.println(plusMethod(6.5,7.9));
-		
-		int aVar = 5;
-		String aString = "string";
-		int aArray[] = {1,2,3};
-		update(aVar);
-		update(aString);
-		update(aArray);
-		System.out.println(aVar);
-		System.out.println(aString);
-		System.out.println(Arrays.toString(aArray));
+				
 	}
 	
 	// Java Methods
@@ -195,17 +186,6 @@ public class Main {
 	static int myMethod3(int x, int y) {
 		return x + y;
 	}
-	
-	static void update(int x) {
-		x += 1;
-	}
-	static void update(String s) {
-		s += " Updated";
-	}
-	static void update(int [] aArray) {
-		aArray[0] = 5;
-	}
-	
 	// method overloading
 	// With method overloading, multiple methods can have the same name with different parameters:
 	static int plusMethod(int x, int y) {
