@@ -152,6 +152,10 @@ public class Main {
 	    for (String c : cars) {
 	      System.out.println(c);
 	    }
+	    // some more array functions
+	    Arrays.fill(items, 5);
+	    Arrays.equals(items, matrix[0]);
+	    
 	    
 	    System.out.println("*** final keyword for constants *** ");
 		// constants: Constants (also called final variables) have a fixed value.  
@@ -212,7 +216,7 @@ public class Main {
 		  return x + y;
 	}
 	
-	// scope
+	// scope: variables are only accessible inside the region they are created. This is called scope.
 	// Method scope
 	// Block scope
 }
