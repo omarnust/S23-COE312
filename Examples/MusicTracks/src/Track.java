@@ -26,4 +26,5 @@ public class Track {
 	           length+"\nReleased in: "+year+"\nBand name: "
 				+band.nameb+"\nBand members:\n"+band;
 	} 
+	
 }

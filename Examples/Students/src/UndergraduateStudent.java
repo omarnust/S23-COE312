@@ -1,6 +1,5 @@
 public class UndergraduateStudent extends Student{
     
-	@Override
     public void setTuition() {
         this.tuition = 2000;
     }
