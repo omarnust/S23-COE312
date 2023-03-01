@@ -18,9 +18,9 @@ public class Main {
 			
 	    }
 		System.out.println(Thread.currentThread().getName()); 
-		System.out.println("I have terminated");
 		
-		
+		System.out.println("Main terminated");
+	
 	}
 
 }
