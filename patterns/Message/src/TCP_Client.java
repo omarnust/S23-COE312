@@ -13,7 +13,7 @@ public class TCP_Client extends ConcreteSubject implements Runnable {
 	String host = "192.168.0.110";
 	int port = 1234;
 
-	int power_threshold = 25;
+	int power_threshold = 30;
 	
 	JSONParser parser = new JSONParser();
 
@@ -43,7 +43,7 @@ public class TCP_Client extends ConcreteSubject implements Runnable {
 				float power = Float.parseFloat(logS);
 				//System.out.println(logS);
 			
-				if(power>-power_threshold) {
+				if(Math.abs(power)  < power_threshold) {
 					// send a message to who ever wants it 
 					Message m = new Message(this, "speaking", "yes"); 
 					publishMessage(m);

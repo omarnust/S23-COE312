@@ -15,3 +15,4 @@ public class Message {
 		return "origin:"+origin+"\ntopic:"+topic+"\npayload:"+payload;
 	}
 }
+

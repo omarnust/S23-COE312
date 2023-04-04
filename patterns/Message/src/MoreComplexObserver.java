@@ -19,7 +19,7 @@ public class MoreComplexObserver extends ConcreteObserver implements Runnable {
 			 time = m.payload;
 			 origin = m.origin;
 		}
-		else if(m.topic =="speaking") {			
+		else if(m.topic == "speaking") {			
 			speaking = m.payload;
 		}
 	}
