@@ -20,8 +20,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Customer normalCustomer1 = new Customer();
-		Customer goldCustomer1 = new GoldCustomer(new PremiumDiscountStrategy(), new SeatingAnyRow());
-		Customer premiumCustomer1 = new PremiumCustomer(new GoldDiscountStrategy(), new SeatingFirstThreeRow());
+		Customer goldCustomer1 = new GoldCustomer(new GoldDiscountStrategy(), new SeatingAnyRow());
+		Customer premiumCustomer1 = new PremiumCustomer(new PremiumDiscountStrategy(), new SeatingFirstThreeRow());
 		
 		normalCustomer1.applyDiscount(1002);
 		goldCustomer1.applyDiscount(1002);
