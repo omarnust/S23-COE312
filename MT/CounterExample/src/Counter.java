@@ -8,9 +8,9 @@ public class Counter {
 	}
 	//public synchronized void addCounter(String door) {
 	public void addCounter(String door) {	
-		try {
+		try {		
 			int val = count;
-			Thread.sleep(0);
+			Thread.sleep(10);
 			count = val+1;
 			System.out.println(door + "-> Counter: " + count);
 		}catch(Exception e) {

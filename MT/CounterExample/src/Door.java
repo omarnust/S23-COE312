@@ -12,8 +12,8 @@ public class Door implements Runnable{
 	
 	public void run() {
 		// uncomment one of the following functions
-		run_nosynchronization();
-		//run_withBlocksynchronization();
+		//run_nosynchronization();
+		run_withBlocksynchronization();
 	}
 	
 	
@@ -25,8 +25,9 @@ public class Door implements Runnable{
 	
 	public void run_withBlocksynchronization() {
 		for (int i=0; i<totalPeople; i++) {
+			
 			synchronized(counter) {
-				counter.addCounter(this.toString());
+				counter.addCounter(Thread.currentThread().getName());
 			}
 		}
 	}

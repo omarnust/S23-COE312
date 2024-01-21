@@ -4,6 +4,16 @@ public class Main {
 		
 		 MallardDuck d = new MallardDuck();
 		 d.performFly();
+		 
+		 // this duck gets shot
+		 d.setFlyBehavior(new flyNoWay());
+		 d.performFly();
+		 
+		 RubberDuck rd = new RubberDuck();
+		 rd.setFlyBehavior(null);
+		 rd.setQuackBehavior(new Quack());
+		 
+		 rd.
 		
 
 	}
